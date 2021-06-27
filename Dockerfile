@@ -11,5 +11,5 @@ RUN microdnf -y install bzip2-libs.i686 libnsl.i686 && rm -fr /var/cache/*
 COPY --from=0 /root/rlwrapdist/ /usr/
 COPY --from=docker.io/dpollock007/kdb-torq:jenkins /opt/q /root/q
 VOLUME /data
-# the sleep is a workaround for "rlwrap: error: My terminal reports width=0 (is it emacs?)"
-CMD sleep 1; RLWRAP_HOME=/data /usr/bin/rlwrap /root/q/l32/q
+COPY q.sh /data/
+ENTRYPOINT ["/data/q.sh"]
