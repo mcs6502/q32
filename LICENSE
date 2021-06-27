@@ -1,0 +1,17 @@
+This Dockerfile and accompanying documents are licensed under the MIT licence.
+Copyright (C) 2021 Igor Mironov.
+
+This Dockerfile describes the installation of free non-commercial 32-bit
+personal edition of kdb+/q software, the use of which is governed by its own
+terms and conditions. Please refer to https://code.kx.com/q/learn/licensing/
+for more details on those.
+
+This Dockerfile describes the installation of AquaQ TorQ software, which is
+licensed under the MIT licence (see
+https://aquaqanalytics.github.io/TorQ/Overview/#license). Parts of the base
+image https://hub.docker.com/r/dpollock007/kdb-torq may be covered by different
+licences.
+
+This Dockerfile describes the installation of Oracle Linux 8-slim software
+distribution, which is released under the GPLv2 licence. Please consult
+https://github.com/oracle/container-images for more details.
